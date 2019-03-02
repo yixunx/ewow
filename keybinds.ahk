@@ -1,3 +1,5 @@
+*AppsKey::RWin
+
 ;; -----------
 ;; C- bindings
 ;; -----------
@@ -8,7 +10,7 @@
 ^l:: forward_char()
 ^j:: next_line()
 ^k:: previous_line()
-^g:: keyboard_quit()
+;^g:: keyboard_quit()
 ^space:: set_mark_command()
 ^bs:: backward_kill_word()
 ^delete:: kill_word()
@@ -24,15 +26,35 @@
 !^l:: forward_word()
 !^j:: scroll_down()
 !^k:: scroll_up()
+!^v:: paste_kindle()
 
 ;; -----------------
 ;; C-Shift- bindings
 ;; -----------------
 #If !dummy && !ignored_frame() && !cx
-^+a:: mark_whole_buffer()
+^+a:: select_all()
+^+j:: self_insert_command()
+^+e:: ctrl_e()
+
+;; -----------------
+;; C-Win- bindings
+;; -----------------
+#^s:: save_buffer()
 
 ;; ------------
 ;; special keys
 ;; ------------
 #If !dummy && !ignored_frame() && !cx
 escape:: keyboard_quit()
+
+;; ------------
+;; Mouse
+;; ------------
+; MouseIsOver(WinTitle) {
+;     MouseGetPos,,, Win
+;     return WinExist(WinTitle . " ahk_id " . Win)
+; }
+; #If MouseIsOver("ahk_class CabinetWClass")
+; MButton::
+;     Send {LButton}{AppsKey}e
+;     return
