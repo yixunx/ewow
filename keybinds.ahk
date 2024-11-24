@@ -1,4 +1,5 @@
 *AppsKey::RWin
+Capslock::Esc
 
 ;; -----------
 ;; C- bindings
@@ -46,6 +47,12 @@
 ;; ------------
 #If !dummy && !ignored_frame() && !cx
 escape:: keyboard_quit()
+
+;; ------------
+;; NumPad
+;; ------------
+SetNumLockState, AlwaysOn
+NumLock::Backspace
 
 ;; ------------
 ;; Mouse
