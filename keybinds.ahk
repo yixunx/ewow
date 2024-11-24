@@ -29,6 +29,12 @@ Capslock::Esc
 !^k:: scroll_up()
 !^v:: paste_kindle()
 
+;; -------------
+;; Alt- bindings
+;; -------------
+!l:: Send ^l  ; Can't map win+L which is forced to be lock screen
+!bs::backward_kill_word()
+
 ;; -----------------
 ;; C-Shift- bindings
 ;; -----------------
@@ -41,6 +47,14 @@ Capslock::Esc
 ;; C-Win- bindings
 ;; -----------------
 #^s:: save_buffer()
+
+;; -----------------
+;; Win- bindings
+;; -----------------
+#a:: select_all()
+#c:: Send ^c
+#v:: Send ^v
+#s:: Send ^s
 
 ;; ------------
 ;; special keys
