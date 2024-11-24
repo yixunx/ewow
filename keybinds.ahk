@@ -49,9 +49,18 @@ Capslock::Esc
 #^s:: save_buffer()
 
 ;; -----------------
+;; Disable Win key
+;; -----------------
+~LWin::
+~RWin::
+	Send {Blind}{vk07}
+return
+
+;; -----------------
 ;; Win- bindings
 ;; -----------------
 #a:: select_all()
+#x:: Send ^x
 #c:: Send ^c
 #v:: Send ^v
 #s:: Send ^s
