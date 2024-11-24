@@ -55,6 +55,11 @@ Capslock::Esc
 #c:: Send ^c
 #v:: Send ^v
 #s:: Send ^s
+#f:: Send ^f
+#w:: Send ^w
+#t:: Send ^t
+#q:: Send !{F4}
+#Capslock:: Send !{Space}  ; PowerToys Run
 
 ;; ------------
 ;; special keys
