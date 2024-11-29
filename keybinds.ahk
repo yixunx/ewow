@@ -76,6 +76,8 @@ return
 #If !dummy && !ignored_frame() && !cx
 escape:: keyboard_quit()
 
++Left::Send #2  ; win+2 opens the second program which I map to the Windows Terminal
+
 ;; ------------
 ;; NumPad
 ;; ------------
