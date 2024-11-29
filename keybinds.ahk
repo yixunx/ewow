@@ -68,7 +68,10 @@ return
 #w:: Send ^w
 #t:: Send ^t
 #q:: Send !{F4}
+#z:: Send ^z
 #Capslock:: Send !{Space}  ; PowerToys Run
+#Tab::Send !{Tab}
+#bs:: kill_whole_line()
 
 ;; ------------
 ;; special keys
