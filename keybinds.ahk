@@ -72,6 +72,7 @@ return
 #Capslock:: Send !{Space}  ; PowerToys Run
 #Tab::Send !{Tab}
 #bs:: kill_whole_line()
+#l:: Send ^l
 
 ;; ------------
 ;; special keys
