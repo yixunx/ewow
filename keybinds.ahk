@@ -74,6 +74,11 @@ return
 #bs:: kill_whole_line()
 #l:: Send ^l
 
+;; -----------------
+;; Alt-Win- bindings
+;; -----------------
+!#c:: Send #v
+
 ;; ------------
 ;; special keys
 ;; ------------
